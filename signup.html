@@ -1,0 +1,83 @@
+<html>
+<head>
+	<title>Sign-up</title>
+	</head>
+<style type="text/css">
+	button 
+	{   
+       background-color:darkblue;   
+       width: 25%;  
+        color: white;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: 5px;   
+        cursor: pointer;   
+    }   
+    lable
+    { font-size: 25px;
+     font-family:Roman;
+     color:darkblue;    	
+    }
+    body
+    { background-image:url(backgroundlogin.jpg);   
+    padding: 10px;
+   background-repeat: no-repeat;
+   background-size: 1300px 900px;
+   background-position:center;      	
+    }
+ input[type=text], input[type=password] ,input[type=email],input[type=age],input[type=address],input[type=number]
+    {   width: 20%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid blue;   
+        box-sizing: border-box;   
+    }
+    .sig {
+		margin: 0 auto;
+		width: 470px;
+	}
+	.sig label{
+		display: inline-block;
+		margin-right:100px;
+		text-align: left;
+		float: left;
+	}
+	.sig input{
+		width:250px;
+		display: inline-block;
+		text-align: left;
+		float: right;
+	}
+    }     
+</style>
+<body>
+	<div class="signup" align="center">
+		<form method="post" action="signup.php">
+			<div class="sig">
+				<h1 style="font:Calibri">Your Registration in Progess ...</h1>
+				<table>
+				<tr><td><lable> Name :</lable></td>
+				<td><input type="text" placeholder="Name" name="name" required></td></tr>
+				
+				<tr><td><lable> Mobile number :</lable></td>
+				<td><input type="text" placeholder="Mobile Number" name="mobile"title="10 cases are Must" pattern="[1-9]{1}[0-9]{9}" required></td></tr>
+				<tr><td><lable> Password :</lable></td>
+				<td><input type="password" placeholder="Password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"required></td></tr>
+				<tr><td><lable> Re-enter Password :</lable></td>
+				<td><input type="password" placeholder="Re-enter Password" title="Enter same Password"name="reenter" required></td></tr>
+				<tr><td><lable> Age :</lable></td>
+				<td><input type="Age" placeholder="Age" name="age" required></td></tr>
+				<tr><td><lable> Address :</lable></td>
+				<td><input type="Address" placeholder="Residential Address" name="address" required></td></tr>
+				<tr><td><lable> Aadhar :</lable></td>
+				<td><input type="text" placeholder="Aadhar number" name="aadhar" required></td></tr>
+			  </table>
+				<div class="sub">
+				<button type="submit"> Sign up </button> 
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

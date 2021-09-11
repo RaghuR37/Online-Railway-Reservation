@@ -1,0 +1,60 @@
+<!DOCTYPE html>   
+<html>   
+<head>    
+<title> Login Page </title>  
+<style>   
+body {  
+  font-family: Calibri, Helvetica, sans-serif;    
+}  
+label
+{    font-size: 25px;
+     font-family:Roman;
+     color:darkblue;
+}
+button {   
+       background-color: darkblue;   
+       width: 10%;  
+        color: white;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid blue;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.2;   
+    }   
+  body
+  { background-image:url(backgroundlogin.jpg);   
+    padding: 10px;
+  background-repeat: no-repeat;
+  background-size: 1300px 900px;
+ background-position:center;  
+  }
+</style>   
+</head>    
+<body>    
+    <center> <h1> Login </h1> </center>  
+    <div align="center"> 
+    <form method="post" action="login.php">  
+        <div class="container">  
+            <table>
+            <tr><td><label>Mobile number : </label></td>
+            <td><input type="text" placeholder="Enter Mobile number" name="mobile" title="10 cases are Must" pattern="[1-9]{1}[0-9]{9}" required> </td></tr><br>
+            <tr><td><label>Password&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label></td>  
+            <td><input type="password" placeholder="Enter Password" name="password" required></td></tr>  
+            </table>
+            <br>
+            <button type="submit">Login</button> 
+        </div>
+    </div>   
+    </form>     
+</body>     
+</html>  

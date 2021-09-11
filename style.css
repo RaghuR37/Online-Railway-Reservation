@@ -1,0 +1,19 @@
+.header {
+	background-color:#0000A0; 
+	padding: 30px 30px;
+	text-decoration: none;
+	border-radius: 10px;
+	
+}
+.header-one {
+	float: right;
+}
+.header-one a {
+	font-size: 20px;
+	padding: 15px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+
+
+}

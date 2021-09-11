@@ -1,0 +1,54 @@
+<html>
+<body style="background-image: url('http://localhost/onlineticket/train2.jpg');height: 80%;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
+<style>
+div.avatar{
+margin-left:46%;
+margin-top:2%;
+}
+div.username{
+margin-top:0%;
+font-size:125;
+font-family:serif;
+
+}
+div.password{
+margin-top:0%;
+font-size:25;
+font-family:serif;
+}
+
+button{
+text-align:center;
+color:white;
+background-color:#A0522D;
+margin-left:42%;
+margin-top:4%;
+font-size:15;
+font-family:serif;
+border-radius:10px;
+height:8%;
+width:15%;
+}
+</style>
+<form method="post" action="adminLogin.php">
+<p style="margin-left:46%;font-size:30;font-family:serif;color:#A0522D">LOGIN</p>
+<div class="avatar">
+     <img src="http://localhost/onlineticket/admin.png" height="100" width="100" />
+  </div>
+<p style="margin-left:35%">User ID</p>
+<div class="username">
+     <input type="text" placeholder="userID" name="userID"  style="width:30%;height:10%;margin-left:35%;border-radius:4px;background-color:#D2B48C" required>
+  </div>
+ <p style="margin-left:35%;margin-top:2%">Password</p>
+ <div class="password">
+     <input type="password" placeholder="enter your password"  style="width:30%;height:10%;margin-left:35%;border-radius:4px;margin-top:0%;background-color:#D2B48C" name="password" required>
+  </div>
+<div class="login">
+	 <button type="submit">Login</button>
+  </div>
+</form>
+</body>
+</html>
